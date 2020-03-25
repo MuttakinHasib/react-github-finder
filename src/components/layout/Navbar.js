@@ -6,13 +6,13 @@ const Navbar = ({ icon, title }) => {
   return (
     <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
       <div className='container'>
-        <Link to='/' className='navbar-brand'>
+        <Link to='/react-github-finder' className='navbar-brand'>
           <i className={icon}></i>&nbsp; {title}
         </Link>
         <div className='collapse navbar-collapse'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
-              <Link to='/' className='nav-link'>
+              <Link to='/react-github-finder' className='nav-link'>
                 Home
               </Link>
             </li>
