@@ -17,7 +17,7 @@ const Navbar = ({ icon, title }) => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/about' className='nav-link'>
+              <Link to='/react-github-finder/about' className='nav-link'>
                 About
               </Link>
             </li>

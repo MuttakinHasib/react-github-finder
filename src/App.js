@@ -22,8 +22,8 @@ const App = () => {
               <Alert alert={alert} />
               <Switch>
                 <Route exact path='/react-github-finder' component={Home} />
-                <Route exact path='/about' component={About} />
-                <Route exact path='/user/:login' component={User} />
+                <Route exact path='/react-github-finder/about' component={About} />
+                <Route exact path='/react-github-finder/user/:login' component={User} />
                 <Route component={NotFound} />
               </Switch>
             </div>
