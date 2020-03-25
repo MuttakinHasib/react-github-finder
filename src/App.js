@@ -21,7 +21,7 @@ const App = () => {
             <div className='container mt-3'>
               <Alert alert={alert} />
               <Switch>
-                <Route exact path='/' component={Home} />
+                <Route exact path='/react-github-finder' component={Home} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/user/:login' component={User} />
                 <Route component={NotFound} />
