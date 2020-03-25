@@ -7,12 +7,7 @@ const Spinner = () => {
       <img
         src={spinner}
         alt='Loading...'
-        style={{
-          width: "500px",
-          marginTop: "1rem",
-          display: "block",
-          margin: "auto"
-        }}
+        className='img-fluid'
       />
     </Fragment>
   );

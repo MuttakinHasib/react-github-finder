@@ -9,7 +9,18 @@ const Navbar = ({ icon, title }) => {
         <Link to='/react-github-finder' className='navbar-brand'>
           <i className={icon}></i>&nbsp; {title}
         </Link>
-        <div className='collapse navbar-collapse'>
+        <button
+          className='navbar-toggler'
+          type='button'
+          data-toggle='collapse'
+          data-target='#navbarSupportedContent'
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <span className='navbar-toggler-icon'></span>
+        </button>
+        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
               <Link to='/react-github-finder' className='nav-link'>

@@ -22,19 +22,19 @@ const Search = () => {
 
   return (
     <div className='row align-items-center mb-3'>
-      <div className='col-10 my-3'>
+      <div className='col-md-12 my-3'>
         <form onSubmit={onSubmit} className='form'>
-          <div className='form-row'>
-            <div className='col my-3'>
+          <div className='form-row align-items-center'>
+            <div className='col-sm-6 my-1'>
               <input
                 type='text'
-                className='form-control'
+                className='form-control w-100'
                 placeholder='Search Here...'
                 value={text}
                 onChange={onChange}
               />
             </div>
-            <div className='col-sm-2 my-3'>
+            <div className='col-auto my-1'>
               <input
                 type='submit'
                 value='Search'
@@ -43,14 +43,12 @@ const Search = () => {
             </div>
           </div>
         </form>
-      </div>
-      {githubContext.users.length > 0 && (
-        <div className='col-sm'>
-          <button className='btn btn-danger' onClick={githubContext.clearUsers}>
+        {githubContext.users.length > 0 && (
+          <button className='btn btn-danger btn-block' onClick={githubContext.clearUsers}>
             Clear
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

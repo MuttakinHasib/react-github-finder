@@ -33,7 +33,7 @@ const User = ({ match }) => {
   if (loading) return <Spinner />;
   return (
     <Fragment>
-      <Link to='/' className='btn border btn-light mr-2'>
+      <Link to='/react-github-finder' className='btn border btn-light mr-2'>
         <i className='fas fa-reply'></i>&nbsp;&nbsp; Back to search
       </Link>
       Hireable:{'  '}
