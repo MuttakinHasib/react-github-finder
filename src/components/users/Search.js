@@ -21,10 +21,10 @@ const Search = () => {
   const onChange = e => setText(e.target.value);
 
   return (
-    <div className='row align-items-center mb-3'>
-      <div className='col-md-12 my-3'>
+    <div className='row justify-content-center align-items-center mb-3'>
+      <div className='col-md-10 my-3'>
         <form onSubmit={onSubmit} className='form'>
-          <div className='form-row align-items-center'>
+          <div className='form-row justify-content-center align-items-center'>
             <div className='col-sm-6 my-1'>
               <input
                 type='text'
@@ -43,8 +43,13 @@ const Search = () => {
             </div>
           </div>
         </form>
+      </div>
+      <div className='col-sm-2'>
         {githubContext.users.length > 0 && (
-          <button className='btn btn-danger btn-block' onClick={githubContext.clearUsers}>
+          <button
+            className='btn btn-danger btn-block'
+            onClick={githubContext.clearUsers}
+          >
             Clear
           </button>
         )}
